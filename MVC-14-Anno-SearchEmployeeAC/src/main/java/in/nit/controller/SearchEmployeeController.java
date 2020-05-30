@@ -29,6 +29,7 @@ public class SearchEmployeeController {
 	@RequestMapping("/search_emps.htm")
 	public String searchEmployees(Map<String, Object> map, @ModelAttribute EmployeeCommand cmd, BindingResult br) {
 
+		System.out.println("start with contr");
 		EmployeeDTO dto = null;
 
 		List<EmployeeResultDTO> listRDTO = null;
